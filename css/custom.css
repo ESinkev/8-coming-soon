@@ -21,7 +21,6 @@ footer.container {
     background-color: var(--main-color);
 }
 
-
 /* hero */
 .hero {
     text-align: center;
@@ -31,9 +30,9 @@ footer.container {
     height: 40px;
     margin-bottom: calc(var(--hero-space) * 2);
 }
-hero h1 {
+.hero h1 {
     display: inline-block;
-    width: 100%;;
+    width: 100%;
     margin-bottom: var(--hero-space);
     text-transform: uppercase;
     font-size: 50px;
@@ -51,9 +50,9 @@ hero h1 {
 }
 .hero .form {
     width: 90%;
-    margin-left: 5%;;
+    margin-left: 5px;
     margin-bottom: var(--hero-space);
-    margin-right: 5%;
+    margin-right: 5px;
 }
     .hero .form > input {
         width: 100%;
