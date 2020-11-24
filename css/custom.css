@@ -51,7 +51,9 @@ hero h1 {
 }
 .hero .form {
     width: 90%;
+    margin-left: 5%;;
     margin-bottom: var(--hero-space);
+    margin-right: 5%;
 }
     .hero .form > input {
         width: 100%;
