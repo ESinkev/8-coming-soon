@@ -3,6 +3,14 @@ const socialsData = [
         icon: 'facebook',
         link: '#'
     },
+    54851265598,
+    'asgd',
+    true,
+    {},
+    {
+        icon: '',
+        link: ''
+    },
     {
         icon: 'twitter',
         link: '#'
