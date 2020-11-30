@@ -4,7 +4,7 @@
 /**
  * Generuoja statini laikrodi, kuris rodo kiek liko laiko iki artimiausiu Naujuju metu
  * @param {string} selector CSS taisykle, kaip rasti vieta, kur bus generuojamas laikrodzio HTML turinys
- * @returns {boolean} Jei funkcija sekmingai ivykdo savo funkcionaluma, tai grazina `true`, priesingu atveju `false`
+ * @returns {boolean} Jei funkcija sekmingai ivykdo savo funkcionaluma, tai grazina `true`, priesingu atveju - `false`
  */
 function renderClock(selector) {
     if (typeof selector !== 'string') {
@@ -53,7 +53,7 @@ function renderClock(selector) {
     const seconds = Math.floor(secondsLeft - minutes * 60);
 
     const HTML = `<div class="time-box">
-             <div class="time>${days}</div>
+             <div class="time">${days}</div>
             <span>Days</span>
         </div>
             <div class="time-box">
