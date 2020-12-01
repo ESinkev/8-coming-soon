@@ -6,7 +6,7 @@ function isValidSingleProgressBar(progressBar) {
     if (!progressBar.selector ||
         typeof progressBar.selector !== 'string' ||
         progressBar.selector === '') {
-            console.log('ERROR: objekto selecotr parametras turi buti ne tuscias tekstas.');
+            console.error('ERROR: objekto selecotr parametras turi buti ne tuscias tekstas.');
             return false;
         }
         if (!progressBar.title ||

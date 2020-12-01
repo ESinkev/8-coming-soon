@@ -1,6 +1,7 @@
-import { isValidSingleProgressBar } from "./isValidSingleProgressBar.js";
+import { isValidSingleProgressBar } from './isValidSingleProgressBar.js';
 
 /**
+ * Progress bar komponento generavimas
  * @param {string} selector CSS like selectorius, kaip rasti vieta, kur suregeruoti turini
  * @param {string} title Progress bar pavadinimas
  * @param {number} value Progress bar reiksme procentais
@@ -21,7 +22,7 @@ function renderProgressBar(selector, title, value) {
     <div class="loader"></div>
     </div>
     </div>
-    </div>`
+    </div>`;
 
     const DOM = document.querySelector(selector);
 
