@@ -128,7 +128,6 @@ footer .btn.circle {
     top: -24px;
     right: -13px;
 }
-}
 footer .text-trio {
     display: inline-block;
     width: 100%;
@@ -148,12 +147,10 @@ footer .text-trio > .text {
         top: 50%;
         left: -2px;
         transform: translateY(-50%);
-
     }
     footer .text-trio > .text:first-of-type::before {
         display: none;
     }
-
 footer p {
     display: inline-block;
     width: 100%;
