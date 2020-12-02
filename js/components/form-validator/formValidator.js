@@ -1,4 +1,6 @@
-import { isValidEmail, isValidName, isValidText } from './validationRules.js';
+import { validation } from './validationRules.js';
+
+console.log(validation);
 
 function formValidator(selector) {
     const formDOM = document.querySelector(selector);
@@ -22,28 +24,14 @@ function formValidator(selector) {
             const validationRule = input.dataset.validation;
             const text = input.value;
 
-            if (validationRule === 'name') {
-                const nameError = isValidName(text);
-                if (nameError !== true) {
-                console.log(nameError);
-                errorCount++;
+            const validationFunction = validation[validationRule];
+            const error = validationFunction(text);
+            if (error !== true) { 
+            console.log(error);
+            errorCount++; 
             }
         }
-            if (validationRule === 'email') {
-                const emailError = isValidEmail(text);
-                if (emailError !== true) {
-                console.log(emailError);
-                errorCount++;
-                }
-            }
-            if (validationRule === 'text') {
-                const textError = isValidText(text);
-                if (textError !== true) {
-                console.log(textError);
-                errorCount++;
-            }
-        }
-    }
+    
         if (errorCount === 0) {
             console.log('Siunciam info...');
         }
