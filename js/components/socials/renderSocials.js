@@ -5,14 +5,14 @@ import { isValidSocialItem } from './isValidSocialItem.js';
  * Social nuorodu geeneravimas is pateiktu duomenu i nurodyta vieta DOM.e.
  * @param {string} selector Selectorius, kaip rasti norima vieta, kur bus istatomas sugeneruotas kodas
  * @param {Array} data Duomenu masyvas su objektais, kurie reprezentuoja social nuorodas
- * @returns {boolean} Logikos vykdymo metu radus klaida grazina 'false, o funkcijai suveikus teisingai - 'true'
+ * @returns {boolean} Logikos vykdymo metu radus klaida grazina `false` , o funkcijai suveikus teisingai - `true`
  */
 function renderSocials(selector, data) {
     // input validation
     if (!isInputValid(selector, data)) {
         return false;
     }
-
+    
     // logic 
     const socialsDOM = document.querySelector(selector);
         if (!socialsDOM) {
@@ -27,7 +27,7 @@ function renderSocials(selector, data) {
         if (!isValidSocialItem(item)) {
             continue;
         }
-        HTML += `<a href="${item.link}" target="_blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
+        HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"></a>`;
     }
 
     // post logic validation
