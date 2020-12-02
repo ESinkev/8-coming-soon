@@ -13,16 +13,16 @@ function renderProgressBar(selector, title, value) {
         }
 
     const HTML = `<div class="progress-bar">
-    <div class="top">
-    <div class="label">${title}</div>
-    <div class="value">${value}%</div>
-    </div>
-    <div class="bottom">
-    <div class="bar" style="width: ${value}%;">
-    <div class="loader"></div>
-    </div>
-    </div>
-    </div>`;
+                    <div class="top">
+                        <div class="label">${title}</div>
+                        <div class="value">${value}%</div>
+                </div>
+                    <div class="bottom">
+                        <div class="bar" style="width: ${value}%;">
+                            <div class="loader"></div>
+                    </div>
+                </div>
+            </div>`;
 
     const DOM = document.querySelector(selector);
 

@@ -26,9 +26,8 @@ for (let i = 0; i < data.length; i++) {
 }
 
 const allProgressBars = document.querySelectorAll('.progress-bar');
-console.log(allProgressBars);
 
-addEventListener('sroll', () => {
+addEventListener('scroll', () => {
     const screenBottom = innerHeight + scrollY;
 
     for (let bar of allProgressBars) {

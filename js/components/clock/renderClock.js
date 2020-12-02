@@ -28,19 +28,19 @@ function renderClock(selector) {
     const HTML = `<div class="time-box">
                     <div class="time">${time.days}</div>
                     <span>Days</span>
-            </div>
+                </div>
                 <div class="time-box">
                     <div class="time">${time.hours}</div>
                     <span>Hours</span>
-            </div>
-                    <div class="time-box">
+                </div>
+                <div class="time-box">
                     <div class="time">${time.minutes}</div>
                     <span>Minutes</span>
-             </div>
-                    <div class="time-box">
+                </div>
+                <div class="time-box">
                     <div class="time">${time.seconds}</div>
                     <span>Seconds</span>
-            </div>`;
+                </div>`;
 
     DOM.innerHTML = HTML;
     const timesDOM = DOM.querySelectorAll('.time');
@@ -50,10 +50,10 @@ function renderClock(selector) {
 
     setInterval(() => {
         const time = countTimeDiff();
-        timesDom[0].innerText = time.days;
-        timesDom[1].innerText = time.hours;
-        timesDom[2].innerText = time.minutes;
-        timesDom[3].innerText = time.seconds;
+        timesDOM[0].innerText = time.days;
+        timesDOM[1].innerText = time.hours;
+        timesDOM[2].innerText = time.minutes;
+        timesDOM[3].innerText = time.seconds;
     }, 1000);
 
     return true;
